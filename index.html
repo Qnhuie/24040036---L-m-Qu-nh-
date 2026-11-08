@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giới thiệu | Lâm Quỳnh Như</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #25334a;
+      --muted: #66758a;
+      --accent: #397b78;
+      --paper: #ffffff;
+      --wash: #f1f6f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px 18px;
+      background: linear-gradient(145deg, #edf5f3, #f7f8fb 65%, #eef1f8);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    main {
+      width: min(100%, 680px);
+      overflow: hidden;
+      border: 1px solid #e5eceb;
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(37, 51, 74, .10);
+    }
+    header {
+      padding: 38px 42px 34px;
+      background: var(--wash);
+      border-bottom: 1px solid #e5eceb;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; }
+    .intro { margin: 12px 0 0; color: var(--muted); line-height: 1.65; }
+    dl { margin: 0; padding: 10px 42px 24px; }
+    .item { padding: 20px 0; border-bottom: 1px solid #edf0f3; }
+    .item:last-child { border-bottom: 0; }
+    dt { margin-bottom: 7px; color: var(--muted); font-size: .9rem; }
+    dd { margin: 0; font-size: 1.08rem; font-weight: 600; line-height: 1.5; }
+    @media (max-width: 520px) {
+      header { padding: 30px 25px 26px; }
+      dl { padding-right: 25px; padding-left: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Trang giới thiệu</p>
+      <h1>Lâm Quỳnh Như</h1>
+      <p class="intro">Một vài thông tin về tôi.</p>
+    </header>
+    <dl>
+      <div class="item">
+        <dt>Chuyên ngành</dt>
+        <dd>Quan hệ công chúng</dd>
+      </div>
+      <div class="item">
+        <dt>Kỹ năng</dt>
+        <dd>Giao tiếp và chơi thể thao</dd>
+      </div>
+      <div class="item">
+        <dt>Mục tiêu nghề nghiệp</dt>
+        <dd>Phiên dịch viên</dd>
+      </div>
+    </dl>
+  </main>
+</body>
+</html>
